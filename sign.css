@@ -1,82 +1,57 @@
-body
-{
+*{
+    margin: 0;
     padding: 0;
-    margin: 0%;
-    font-family: sans-serif;
-    background-image: url(Screenshot_20230426-182507_Cars\ Wallpaper\ HD.jpg);
-    background-size: 40rem;
-    background-position: center;
+    font-family:"poppins",sans-serif;
+    box-sizing: border-box;
 }
 
-
-
-
-.sign{
-    width: 300px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    background: white;
-    padding: 20px;
-    margin: 8% auto 0;
-    text-align: center;
-    
-}
-.sign h1
-{
-    color: aqua;
-    margin-bottom: 30px;
-}
-.input-box
-{
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    /* width: 100%; */
-    border: 1px solid wheat;
-    outline: none;
-}
-.ddd
-{
-    color: gold;
+.container{
     width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    margin: 10px 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0,)),(rgba(0,0,50,0,)), url(img/bog.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
-.ddd
-{
-    background-color: blue;
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:wheat;
+    padding: 50px 60px 70px;
+    text-align: center;
 }
-a
-{
-    text-decoration: none;
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: aqua;
+    position: relative;
 }
-hr
-{
-    margin-top: 20px;
-    width: 80%;
-}
-.or
-{
-    background: white;
+.form-box h1::after{
+    content: "";
     width: 30px;
-    margin: -19px auto 10px;
+    height: 4px;
+    border-radius: 3px;
+    background: sandybrown;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    /* transform: translate(-50%); */
+}    
+.input-field{
+    background:whitesmoke;
+    margin: 15px 0;
+    border-radius: 3px;
+    /* display: flex; */
+    align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input{
+    width: 100%;
+    background:red ;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
