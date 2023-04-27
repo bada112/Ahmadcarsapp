@@ -1,0 +1,14 @@
+body
+{
+    padding: 0;
+    margin: 0%;
+    font-family: sans-serif;
+    background-image: url(img/Untitled-1.jpg);
+    background-size: 40rem;
+    background-position: center;
+}
+
+.dog
+{
+    color: brown;
+}
