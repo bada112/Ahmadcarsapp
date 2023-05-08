@@ -3,8 +3,8 @@ body
     padding: 0;
     margin: 0%;
     font-family: sans-serif;
-    background-image: url(BMW\ X6M\ Competition\ \(2022\)\ -\ Ultra-Exotic\ Luxury\ SUV\ -\ YouTube\ —\ Mozilla\ Firefox\ 4_28_2023\ 5_37_23\ PM.png);
-    /* background-size: 40rem; */
+    background-image: url(images.jpg);
+    background-size: 40rem;
     background-position: center;
 }
 
@@ -65,17 +65,6 @@ hr
     width: 30px;
     margin: -19px auto 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
