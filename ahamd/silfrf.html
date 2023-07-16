@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slideshow Demo</title>
+	<style>
+		.slideshow {
+			position: relative;
+			width: 100%;
+			height: 600px;
+			overflow: hidden;
+		}
+		.slideshow img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 1s ease;
+		}
+		.slideshow img.show {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="slideshow">
+		<img src="./" alt="">
+		<img src="Screenshot_20230211-162059_Chrome.png">
+		<img src="Screenshot_20230211-161847_Chrome.png">
+		<img src="Screenshot_20230211-162052_Chrome.png">
+		<img src="Screenshot_20230211-161917_Chrome.png">
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].classList.remove("show");
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].classList.add("show");
+		  setTimeout(showSlides, 2000); // Change image every 3 seconds
+		}
+	</script>
+	
+</body>
+</html>
